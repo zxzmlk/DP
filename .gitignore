@@ -1,0 +1,12 @@
+# Игнорируем все в папке nginx
+nginx/**
+
+# Исключение для nginx.conf
+!nginx/conf/nginx.conf
+
+# Исключение для nginx.exe
+!nginx/nginx.exe
+
+# Включение всех промежуточных директорий для успешного применения исключений
+!nginx/
+!nginx/conf/
