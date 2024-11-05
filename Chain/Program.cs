@@ -28,8 +28,6 @@ namespace Chain
             // Настраиваем сокеты (слушатель и отправитель)
             InitSockets(listenPort, writerAddress, writerPort);
 
-            // Просим пользователя ввести значение x
-            Console.Write("Введите число x: ");
             x = Convert.ToInt32(Console.ReadLine());
 
             if (isInitiator)
@@ -108,8 +106,6 @@ namespace Chain
 
         private static void InitSockets(int listenPort, string writerAddress, int writerPort)
         {
-            Console.Write("Введите число x: ");
-
             // 1. IPAddress.Any (0.0.0.0) - слушать на всех сетевых интерфейсах компьютера
             IPAddress listenIpAddress = IPAddress.Any;
 
